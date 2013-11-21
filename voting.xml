@@ -39,23 +39,31 @@
 <body>
 
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-
-<h3>Simple Hangout App</h3>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<h3>Voting</h3>
 
 <p>
-<input class="button" type="button" value="Show participants!" id="showParticipants" 
+<input class="button" type="button" value="Start" id="doStart"
     style="visibility:hidden;"
-    onClick="showParticipants()"/>
+    onClick="doStart()"/>
 </p>
 
 <div id="participantsDiv"></div>
-
+<div id="StartFrame"></div>
+<div id="entityDiv"></div>
 <hr>
 
 <p><a href="http://developers.google.com/+/hangouts/getting-started">Read the docs</a> to learn more about developing hangouts!</a></p>
 
 <script>
+    function doStart(){
+        
+
+    }
+    
 function showParticipants() {
+
+
   var participants = gapi.hangout.getParticipants();
 
   var retVal = '<p>Participants: </p><ul>';
