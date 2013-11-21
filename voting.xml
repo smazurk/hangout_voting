@@ -43,9 +43,7 @@
 <h3>Voting</h3>
 
 <p>
-<input class="button" type="button" value="Start" id="doStart"
-    style="visibility:hidden;"
-    onClick="doStart()"/>
+<input class="button" type="button" value="Start" id="doStart" style="visibility:hidden;" onClick="doStart()"/>
 </p>
 
 <div id="participantsDiv"></div>
@@ -53,7 +51,7 @@
 <div id="entityDiv"></div>
 <hr>
 
-<p><a href="http://developers.google.com/+/hangouts/getting-started">Read the docs</a> to learn more about developing hangouts!</a></p>
+<p>TEST TEST</p>
 
 <script>
     function doStart(){
@@ -89,8 +87,8 @@ function init() {
   gapi.hangout.onApiReady.add(
       function(eventObj) {
         if (eventObj.isApiReady) {
-          document.getElementById('showParticipants')
-            .style.visibility = 'visible';
+          document.getElementById('showParticipants').style.visibility = 'visible';
+          document.getElementById('doStart').style.visibility = 'visible';
         }
       });
 }
