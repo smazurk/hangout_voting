@@ -55,9 +55,17 @@
 
 <script>
     function doStart(){
-            
+
+	$.getJSON("http://stevem.tpondemand.com/api/v1/UserStories/?token=MTpGNUZGMjJBRTAxNjdFQ0IyMTU1NzBBNTQwNkYxNkY1NQ==&format=json&take=1000", formatResult);
+           
 
     }
+
+	function formatResult(data){
+	
+	console.log(data);
+	
+	}
     
 function showParticipants() {
 
