@@ -44,18 +44,18 @@
 
 <p>
 <input class="button" type="button" value="Start" id="doStart" style="visibility:hidden;" onClick="doStart()"/>
+<input class="button" type="button" value="Start" id="showParticipants" style="visibility:hidden;" onClick="showParticipants()"/>
 </p>
 
 <div id="participantsDiv"></div>
-<div id="StartFrame"></div>
+<div id="startFrame">REST Query:<input type="text" id="rest"></div>
 <div id="entityDiv"></div>
-<hr>
 
-<p>TEST TEST</p>
+<p></p>
 
 <script>
     function doStart(){
-        
+            
 
     }
     
